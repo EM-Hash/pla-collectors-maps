@@ -1,0 +1,37 @@
+@import "~@nativescript/theme/core";
+
+//Overrides
+
+//General
+$font-size: 18px;
+$border-radius: 2px;
+$btn-font-size: $font-size;
+
+//Light
+$primary: #27394D;
+$secondary: #374f69;
+$complementary: #27394D;
+$complementary-color: #e8e9f0;
+$accent: #34A19C;
+$background: #e0deb7;
+
+//Dark
+$primary-dark: #e8e9f0;
+$secondary-dark: #F0EBCE;
+$background-dark: #27394D;
+$accent-dark: #34A19C;
+$complementary-dark: #374f69;
+$complementary-color-dark: #e8e9f0;
+
+@import "~@nativescript/theme/index";
+
+
+Button{
+  background-color: $secondary;
+  color: $primary-dark;
+
+  @at-root .ns-dark &{
+    background-color: $secondary-dark;
+    color: $primary-dark;
+  }
+}
